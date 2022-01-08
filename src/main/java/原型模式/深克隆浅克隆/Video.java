@@ -18,7 +18,11 @@ public class Video implements Cloneable {
 
     @Override
     protected Object clone() throws CloneNotSupportedException {
-        return super.clone();
+        Object obj = super.clone();
+        Video video = (Video) obj;
+        //将对象的属性也进行克隆
+        video.setCreateTime((Date) this.createTime.clone());
+        return obj;
     }
 
 }
