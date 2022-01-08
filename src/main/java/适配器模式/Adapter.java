@@ -1,6 +1,6 @@
 package 适配器模式;
 
-//适配器
+//适配器，转换器
 public class Adapter extends Adaptee implements NetToUSB{
 
     @Override

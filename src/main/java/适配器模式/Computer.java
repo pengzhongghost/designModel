@@ -14,6 +14,8 @@ public class Computer {
         //转接器
         Adapter adapter = new Adapter();
         computer.net(adapter);
+        Adapter2 adapter2 = new Adapter2();
+        computer.net(adapter2);
     }
 
 }
