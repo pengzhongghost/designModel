@@ -26,6 +26,7 @@ public class LazySIngle {
     }
 
     //TODO 确保不能指令重排
+    //     对象不为null，但是初始化还没完毕
     private volatile static LazySIngle lazySIngle;
 
     //只有调用的时候才去创建对象
